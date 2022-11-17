@@ -11,7 +11,14 @@ Options:
 [<arg4>]          Takes any value (this is an optional positional option)
 """ 
 
+    
 from docopt import docopt
-opt = docopt(__doc__)
-print(opt)
-print(type(opt))
+def main():
+    opt = docopt(__doc__)
+    print(opt)
+    print(type(opt))
+
+
+# call main function
+if __name__ == "__main__":
+    main()
